@@ -13,7 +13,7 @@ The link to the UCI ML Parkinsons dataset used is given below
 The main goal of this project is to use Python Machine Learning to build a classification model which can accurately detect the presence of Parkinson’s disease in a patient’s body based on the various feature inputs used to train the model.
   
  Abstract : Oxford Parkinson's Disease Detection Dataset
-🚀 **WHATS IN THE DATASET?**
+🚀 **WHAT'S IN THE DATASET?**
 
   Data Set Characteristics: Multivariate
 
@@ -44,22 +44,16 @@ instance corresponding to one voice recording. There are around six
 recordings per patient, the name of the patient is identified in the first 
 column</h2>
 
-👩‍🔬👩‍💻Workflow :
-We will use the Google Colab Notebooks whih are popular data science tools to do our Model building.
+<h1 align="center"> What is XGBoost?</h1>
 
-1 Load the Dataset
+XGBoost is a new Machine Learning algorithm designed with speed and performance in mind. XGBoost stands for eXtreme Gradient Boosting and is based on decision trees. In this project, we will import the XGBClassifier from the xgboost library; this is an implementation of the scikit-learn API for XGBoost classification.
 
-2 Data Preprocessing
+<h1 align="center"> 👩‍🔬👩‍💻Workflow </h1>
 
-3 Splitting the dataset 
+We will use Google Colab Notebooks which is a popular data science tool to do our Model building. In this Python machine learning project, using the Python libraries scikit-learn, numpy, pandas, and xgboost, we will build a model using an XGBClassifier. We’ll load the data, get the features and labels, scale the features, then split the dataset, build an XGBClassifier, and then calculate the accuracy of our model.
 
-4 Training the model 
 
-5 Testing The model
-
-6 Determining accuracy
-
-* Here we load all the libraries we will need to work with .
+* Below are the libraries required to be imported.
 
   ```
   import pandas as pandas
