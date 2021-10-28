@@ -50,18 +50,7 @@ XGBoost is a new Machine Learning algorithm designed with speed and performance 
 
 <h1 align="center"> 👩‍🔬👩‍💻Workflow </h1>
 
-We will use Google Colab Notebooks which is a popular data science tool to do our Model building. In this Python machine learning project, using the Python libraries scikit-learn, numpy, pandas, and xgboost, we will build a classification model using an XGBClassifier. Steps for Detecting Parkinson’s Disease with XGBoost include: 
-
-1. **Load the dataset** 
-![Load dataset](https://user-images.githubusercontent.com/92327878/139227218-a68a8543-e6f1-4472-a7e5-fef27789be58.jpg)
-
-2. **Get the features and labels**: Get the features and labels from the DataFrame (dataset). The features are all the columns except ‘status’, and the labels are those in the ‘status’ column. 
-![Get features](https://user-images.githubusercontent.com/92327878/139227986-5fc3c1fa-341e-4dab-a8aa-027844f8da90.jpg)
-
-3. **Scale the features** 
-5. Split the dataset build an XGBClassifierand
-6. Calculate the accuracy of the model.
-
+We will use Google Colab Notebooks which is a popular data science tool to do our Model building. In this Python machine learning project, using the Python libraries scikit-learn, numpy, pandas, and xgboost, we will build a classification model using an XGBClassifier. 
 
 * Below are the imported libraries used.
 
@@ -71,3 +60,32 @@ We will use Google Colab Notebooks which is a popular data science tool to do ou
   from xgboost import XGBClassifier
   from sklearn.model_selection import train_test_split
   from sklearn.metrics import accuracy_score```
+
+
+<h1 align="center"> Steps for Detecting Parkinson’s Disease with XGBoost </h1>
+
+1. **Load the dataset** 
+
+![Load dataset](https://user-images.githubusercontent.com/92327878/139227218-a68a8543-e6f1-4472-a7e5-fef27789be58.jpg)
+
+2. **Get the features and labels**: Get the features and labels from the DataFrame (dataset). The features are all the columns except ‘status’, and the labels are those in the ‘status’ column. 
+
+![Get features](https://user-images.githubusercontent.com/92327878/139227986-5fc3c1fa-341e-4dab-a8aa-027844f8da90.jpg)
+
+3. **Scale the features**: Initialize a MinMaxScaler and scale the features to between -1 and 1 to normalize them. The MinMaxScaler transforms features by scaling them to a given range. The fit_transform() method fits to the data and then transforms it. We don’t need to scale the labels. 
+
+![Scale features](https://user-images.githubusercontent.com/92327878/139229344-482b3050-b733-4e4a-a21b-a507c425cf18.jpg)
+
+
+4. **Split the dataset, build an XGBClassifier**: Split the dataset into training and testing sets keeping 20% of the data for testing.
+
+![Split dataset](https://user-images.githubusercontent.com/92327878/139229590-79d56235-5639-4e0f-88a8-353d1c8f8860.jpg)
+
+5. **Train the model**: Initialize an XGBClassifier and train the model. This classifies using eXtreme Gradient Boosting- using gradient boosting algorithms for modern data science problems. It falls under the category of Ensemble Learning in ML, where we train and predict using many models to produce one superior output.
+
+![Train the model](https://user-images.githubusercontent.com/92327878/139229711-f037d117-fdcd-4929-a0c0-92683f017b01.jpg)
+
+6. **Calculate the accuracy of the model**: Finally, we generate y_pred (predicted values for x_test), calculate the accuracy for the model and print it the result. This model gives us an accuracy of **94.87%**
+
+![Calculate accuracy](https://user-images.githubusercontent.com/92327878/139229775-07311cf0-a215-4b2c-a26d-6882e4484f07.jpg)
+
