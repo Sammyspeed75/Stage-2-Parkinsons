@@ -50,7 +50,7 @@ XGBoost is a new Machine Learning algorithm designed with speed and performance 
 
 <h1 align="center"> 👩‍🔬👩‍💻Workflow </h1>
 
-We will use Google Colab Notebooks which is a popular data science tool to do our Model building. In this Python machine learning project, using the Python libraries scikit-learn, numpy, pandas, and xgboost, we will build a classification model using an XGBClassifier. The steps followed include: 
+We will use Google Colab Notebooks which is a popular data science tool to do our Model building. In this Python machine learning project, using the Python libraries scikit-learn, numpy, pandas, and xgboost, we will build a classification model using an XGBClassifier. Steps for Detecting Parkinson’s Disease with XGBoost include: 
 
 1. Load the dataset. 
 2. Get the features and labels. 
@@ -59,7 +59,7 @@ We will use Google Colab Notebooks which is a popular data science tool to do ou
 5. Calculate the accuracy of the model.
 
 
-* Below are the libraries required to be imported.
+* Below are the imported libraries used.
 
   ```
   import pandas as pandas
